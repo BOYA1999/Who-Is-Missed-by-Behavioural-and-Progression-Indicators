@@ -1,0 +1,15 @@
+{
+  "analysis_id": "reviewer_revision_v1",
+  "status": "pass",
+  "analytic_n": 29588,
+  "spain_total_n": 30800,
+  "excluded_outcome_n": 1212,
+  "alternative_bullying_nonmissing_n": 29292,
+  "baseline_refit_max_abs_difference": {
+    "routine_logit": 9.71445146547012e-17,
+    "expanded_logit": 1.1102230246251565e-16
+  },
+  "routine_covered_cases_displaced_fraction": 0.40405268458164706,
+  "all_student_union_capacity": 0.16373576492987685,
+  "interpretation_boundary": "Conditional fixed-score audit of model-defined coverage; not real-world detection, diagnosis, model-refitting uncertainty, causal inference, or deployment validation."
+}

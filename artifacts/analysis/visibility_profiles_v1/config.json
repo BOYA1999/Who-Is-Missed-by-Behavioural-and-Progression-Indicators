@@ -1,0 +1,28 @@
+{
+  "analysis_id": "visibility_profiles_v1",
+  "parent_run": "artifacts/experiment/main_v1",
+  "country": "ESP",
+  "outcome": "ST016Q01NA",
+  "low_life_satisfaction_range": [0, 4],
+  "weight": "W_FSTUWT",
+  "school_id": "CNTSCHID",
+  "student_id": "CNTSTUID",
+  "routine_score": "p__routine_logit__school_nested",
+  "student_experience_score": "p__expanded_logit__school_nested",
+  "capacity": 0.1,
+  "bootstrap_replicates": 1000,
+  "seed": 20260918,
+  "profile_variables": [
+    "ST016Q01NA",
+    "BELONG",
+    "BULLIED",
+    "TEACHSUP",
+    "ESCS",
+    "female",
+    "immigrant",
+    "repeated_grade",
+    "any_whole_day_absence",
+    "any_class_skipping",
+    "any_tardiness"
+  ]
+}

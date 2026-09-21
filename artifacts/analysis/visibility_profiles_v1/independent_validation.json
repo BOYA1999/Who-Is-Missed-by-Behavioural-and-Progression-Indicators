@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "failures": [],
+  "checks": {
+    "assignment_rows": 4057,
+    "memberships_sum_to_one": true,
+    "recalls_match_main_v1": true,
+    "relational_profiles_recomputed": true,
+    "artifact_manifest_verified": true
+  }
+}

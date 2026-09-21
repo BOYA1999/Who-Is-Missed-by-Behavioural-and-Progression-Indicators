@@ -1,0 +1,24 @@
+{
+  "status": "pass_with_caveats",
+  "failures": [],
+  "caveats": [],
+  "independent_continuous": {
+    "mae": 1.6047618012620282,
+    "rmse": 2.083170839479542
+  },
+  "independent_audit_attribute_binary": {
+    "auprc": 0.34862894711304393,
+    "auroc": 0.7452142258745672,
+    "brier": 0.11050084359650801,
+    "recall_at_10pct_capacity": 0.2933172826526702,
+    "precision_at_10pct_capacity": 0.42755486522729297
+  },
+  "complete_case_n": 27937,
+  "reconstructed_school_overlap_folds": [],
+  "audit_attribute_gap_increases": {
+    "escs_weighted_tertile": 0.0757041759771413,
+    "immigration_background": 0.04296240377375479,
+    "sex": 0.1824201898100747
+  },
+  "review_scope": "four pre-specified sensitivity slices; no model-refitting uncertainty intervals"
+}

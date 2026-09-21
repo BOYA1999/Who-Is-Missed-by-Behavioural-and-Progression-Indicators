@@ -1,0 +1,25 @@
+{
+  "campaign_id": "campaign_v1",
+  "parent_run": "artifacts/experiment/main_v1",
+  "seed": 20260918,
+  "outer_school_splits": 5,
+  "inner_school_splits": 3,
+  "capacity": 0.1,
+  "continuous_logit_analogue": {
+    "model": "ridge",
+    "alpha": [0.1, 1.0, 10.0]
+  },
+  "continuous_hgb": {
+    "learning_rate": [0.05],
+    "max_iter": [200],
+    "max_leaf_nodes": [7, 15, 31],
+    "min_samples_leaf": [50, 100],
+    "l2_regularization": [1.0]
+  },
+  "slices": [
+    "continuous_outcome",
+    "complete_case",
+    "audit_attributes",
+    "within_school_capacity"
+  ]
+}

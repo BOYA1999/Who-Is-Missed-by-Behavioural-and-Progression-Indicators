@@ -1,0 +1,24 @@
+{
+  "analysis_id": "profile_bootstrap_reselected_v1",
+  "status": "pass",
+  "analytic_n": 29588,
+  "schools": 965,
+  "bootstrap_replicates": 1000,
+  "seed": 20262920,
+  "life_satisfaction_expanded_only_minus_routine_only": {
+    "difference": -0.2831768603395117,
+    "ci_lower": -0.5238879553845844,
+    "ci_upper": -0.003991984224476726
+  },
+  "maximum_capacity_error": 4.440892098500626e-16,
+  "maximum_cell_sum_error": 3.3306690738754696e-16,
+  "evaluation_summary": {
+    "research_question": "Profile uncertainty when both weighted 10% queues are reselected inside each school-cluster bootstrap replicate.",
+    "result": "Completed 1,000 fixed-score, school-cluster bootstrap replicates with replicate-specific queue selection.",
+    "baseline_relation": "Full-sample point estimates are unchanged; percentile intervals replace the prior fixed-membership profile intervals.",
+    "claim_update": "Use the reselected-queue intervals for Figure 2, Table S4, Methods 2.7, and Supplement S6.",
+    "failure_mode": null,
+    "next_action": "Synchronize manuscript text, Figure 2, Table S4, and validation with profile_summary.csv and contrast_summary.csv."
+  },
+  "claim_boundary": "Conditional fixed-score exploratory/descriptive audit; no model-refitting, clinical, causal, or deployment inference."
+}

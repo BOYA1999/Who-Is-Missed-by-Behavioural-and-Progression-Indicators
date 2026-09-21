@@ -1,0 +1,56 @@
+{
+  "run_id": "main_v1",
+  "stage": "main_test",
+  "country": "ESP",
+  "seed": 20260918,
+  "outer_school_splits": 5,
+  "inner_school_splits": 3,
+  "bootstrap_replicates": 1000,
+  "target": "ST016Q01NA",
+  "target_definition": "0-4 inclusive",
+  "school_id": "CNTSCHID",
+  "student_id": "CNTSTUID",
+  "weight": "W_FSTUWT",
+  "routine_features": [
+    "ST001D01T",
+    "REPEAT",
+    "ST062Q01TA",
+    "ST062Q02TA",
+    "ST062Q03TA"
+  ],
+  "school_experience_features": [
+    "BELONG",
+    "BULLIED",
+    "TEACHSUP"
+  ],
+  "audit_features": [
+    "ST004D01T",
+    "IMMIG",
+    "ESCS"
+  ],
+  "parameter_grid": {
+    "logit": {
+      "C": [0.1, 1.0, 10.0]
+    },
+    "hgb": {
+      "max_leaf_nodes": [7, 15, 31],
+      "min_samples_leaf": [50, 100],
+      "learning_rate": [0.05],
+      "max_iter": [200],
+      "l2_regularization": [1.0]
+    }
+  },
+  "capacities": [0.05, 0.1, 0.15, 0.2],
+  "primary_metric": "recall_at_10pct_capacity",
+  "tuning_metric": "weighted_auprc",
+  "primary_split": "school_nested",
+  "transport_split": "region_iecv",
+  "bootstrap_scope": "fixed out-of-fold predictions; schools resampled with replacement; does not include refitting uncertainty",
+  "pisa_brr_variance_factor": 0.05,
+  "minimum_practical_delta": {
+    "recall_at_10pct_capacity": 0.03,
+    "auprc": 0.02
+  },
+  "data_sha256": "24EE020CD6315D8ACA52E07FD9AAEF21CBF4F9E5B21601734B4EE6D0928A0905",
+  "claim_boundary": "offline contemporaneous identification audit; not diagnosis, prospective prediction, causality, intervention evaluation, or deployment validation"
+}

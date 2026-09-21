@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "checks": {
+    "config_replicates_1000": true,
+    "multiplicity_replicates_complete": true,
+    "each_replicate_has_965_school_draws": true,
+    "multiplicities_are_positive_integers": true,
+    "diagnostic_replicates_complete": true,
+    "routine_capacity_exact": true,
+    "expanded_capacity_exact": true,
+    "all_student_cells_close": true,
+    "low_life_satisfaction_cells_close": true,
+    "queue_identities_close": true,
+    "profile_shape_complete": true,
+    "profile_groups_complete": true,
+    "profile_estimates_finite": true,
+    "profile_weights_positive_finite": true,
+    "contrast_shape_complete": true,
+    "contrast_estimates_finite": true,
+    "contrasts_reconstruct_from_profiles": true,
+    "profile_percentile_intervals_reconstruct": true,
+    "profile_full_points_reconstruct": true,
+    "contrast_percentile_intervals_reconstruct": true,
+    "recorded_input_hashes_match": true,
+    "recorded_script_hash_matches": true,
+    "source_snapshot_matches_script": true,
+    "prevalidation_manifest_hashes_match": true
+  },
+  "diagnostics": {
+    "maximum_routine_capacity_error": 2.0816681711721685e-16,
+    "maximum_expanded_capacity_error": 3.885780586188048e-16,
+    "maximum_all_student_cell_sum_error": 2.220446049250313e-16,
+    "maximum_low_life_satisfaction_cell_sum_error": 4.440892098500626e-16,
+    "maximum_contrast_reconstruction_error": 9.575673587391975e-16,
+    "maximum_profile_ci_reconstruction_error": 4.440892098500626e-16,
+    "maximum_profile_point_reconstruction_error": 0.0,
+    "maximum_contrast_ci_reconstruction_error": 2.220446049250313e-16
+  }
+}

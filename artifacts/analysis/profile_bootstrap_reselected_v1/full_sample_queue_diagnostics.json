@@ -1,0 +1,18 @@
+{
+  "routine_selected_fraction": 0.09999999999999999,
+  "expanded_selected_fraction": 0.10000000000000013,
+  "routine_fractional_memberships": 11,
+  "expanded_fractional_memberships": 1,
+  "all_student_cell_shares": {
+    "both": 0.03626423507012329,
+    "routine_only": 0.0637357649298767,
+    "expanded_only": 0.06373576492987686,
+    "neither": 0.8362642350701233
+  },
+  "low_life_satisfaction_cell_shares": {
+    "both": 0.09711234948072933,
+    "routine_only": 0.06584223890021974,
+    "expanded_only": 0.16826080970973054,
+    "neither": 0.6687846019093204
+  }
+}

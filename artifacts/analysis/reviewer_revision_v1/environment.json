@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "pyreadstat": "1.3.6",
+    "scikit-learn": "1.9.1"
+  },
+  "started_utc": "2026-09-19T16:26:42.821046+00:00",
+  "ended_utc": "2026-09-19T16:28:07.918599+00:00",
+  "script_sha256": "78c2ee71166cbacb16fff0b8352f5b47e29f0412b5af8d05d68dfaede897fb4d",
+  "data_sha256": "9e4eddacd25e10c145f7bfe817fc99a5b8df544536e5ea1dfd7230c988916a8c"
+}

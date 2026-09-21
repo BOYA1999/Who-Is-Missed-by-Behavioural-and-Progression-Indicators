@@ -1,0 +1,20 @@
+{
+  "analysis_id": "profile_bootstrap_reselected_v1",
+  "country": "ESP",
+  "source_seed": 20260920,
+  "seed_offset": 2000,
+  "seed": 20262920,
+  "bootstrap_replicates": 1000,
+  "capacity": 0.1,
+  "resampling_unit": "CNTSCHID",
+  "queue_selection": "reselected within every bootstrap replicate",
+  "fractional_tie_rule": "equal membership fraction within a score tie at the weighted boundary",
+  "four_cell_convention": {
+    "both": "routine * expanded",
+    "routine_only": "routine * (1 - expanded)",
+    "expanded_only": "(1 - routine) * expanded",
+    "neither": "(1 - routine) * (1 - expanded)"
+  },
+  "ci": "2.5th and 97.5th percentiles of 1,000 school-cluster bootstrap replicates",
+  "claim_boundary": "Conditional fixed-score exploratory/descriptive audit; no model-refitting, clinical, causal, or deployment inference."
+}

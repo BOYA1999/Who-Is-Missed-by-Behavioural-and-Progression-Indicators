@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "failures": [],
+  "checks": {
+    "prediction_ids_unique": true,
+    "raw_merge_one_to_one": true,
+    "routine_recall_matches_main": true,
+    "expanded_recall_matches_main": true,
+    "visibility_memberships_sum_to_one": true,
+    "bootstrap_replicates": 1000
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "run_id": "pilot_v1",
+  "stage": "auxiliary_dev",
+  "country": "ESP",
+  "seed": 20260918,
+  "n_splits": 5,
+  "target": "ST016Q01NA",
+  "target_definition": "0-4 inclusive",
+  "school_id": "CNTSCHID",
+  "student_id": "CNTSTUID",
+  "weight": "W_FSTUWT",
+  "routine_features": [
+    "ST001D01T",
+    "REPEAT",
+    "ST062Q01TA",
+    "ST062Q02TA",
+    "ST062Q03TA"
+  ],
+  "school_experience_features": [
+    "BELONG",
+    "BULLIED",
+    "TEACHSUP"
+  ],
+  "audit_features": [
+    "ST004D01T",
+    "IMMIG",
+    "ESCS"
+  ],
+  "models": {
+    "logit": {
+      "penalty": "elasticnet",
+      "C": 1.0,
+      "l1_ratio": 0.1,
+      "solver": "saga",
+      "max_iter": 3000
+    },
+    "hgb": {
+      "learning_rate": 0.05,
+      "max_iter": 150,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 50,
+      "l2_regularization": 1.0
+    }
+  },
+  "capacities": [0.05, 0.1, 0.15, 0.2],
+  "primary_metric": "recall_at_10pct_capacity",
+  "primary_split": "school_grouped",
+  "comparator_split": "student_random",
+  "data_sha256": "24EE020CD6315D8ACA52E07FD9AAEF21CBF4F9E5B21601734B4EE6D0928A0905",
+  "codebook_sha256": "E130E8EA3BB328D09A02789291673531300870967E236DD8F658E7052E12C974",
+  "claim_boundary": "offline proxy-rule audit; not diagnosis, causality, intervention evaluation, or deployment validation"
+}

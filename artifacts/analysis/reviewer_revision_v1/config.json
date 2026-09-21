@@ -1,0 +1,20 @@
+{
+  "analysis_id": "reviewer_revision_v1",
+  "country": "ESP",
+  "seed": 20260920,
+  "bootstrap_replicates": 1000,
+  "capacity": 0.10,
+  "pisa_brr_variance_factor": 0.05,
+  "alternative_bullying_items": [
+    "ST038Q03NA",
+    "ST038Q04NA",
+    "ST038Q05NA",
+    "ST038Q06NA",
+    "ST038Q07NA",
+    "ST038Q08NA",
+    "ST038Q11JA"
+  ],
+  "alternative_bullying_min_valid_items": 5,
+  "alternative_bullying_name": "PEER_VICTIM_7_MEAN",
+  "claim_boundary": "Conditional fixed-score audit of model-defined coverage; not real-world detection, diagnosis, model-refitting uncertainty, causal inference, or deployment validation."
+}

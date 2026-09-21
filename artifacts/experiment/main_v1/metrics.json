@@ -1,0 +1,1769 @@
+{
+  "run_id": "main_v1",
+  "status": "success",
+  "stage": "main_test",
+  "prevalence_brr": {
+    "estimate": 0.14576531643843837,
+    "standard_error": 0.003691128734059412,
+    "ci_95_normal": [
+      0.13853070411968194,
+      0.15299992875719481
+    ],
+    "replicate_count": 80,
+    "variance_factor": 0.05
+  },
+  "heuristic_baseline": {
+    "definition": "one point each for grade repetition, any full-day absence, any class skipping, and frequent tardiness; complete cases",
+    "n": 28802,
+    "weighted_prevalence": 0.14324871930084326,
+    "recall_at_10pct_capacity": 0.1603764624350101,
+    "precision_at_10pct_capacity": 0.22973722849814993
+  },
+  "random_capacity_recall": 0.1,
+  "oracle_recall_at_10pct_capacity": 0.6860342531636008,
+  "metrics": [
+    {
+      "model": "routine_logit",
+      "split": "school_nested",
+      "n": 29588,
+      "weighted_prevalence": 0.14576531643843837,
+      "auprc": 0.19968719409216784,
+      "auroc": 0.5996992401569652,
+      "brier": 0.12272620218116655,
+      "calibration_intercept": -0.08978425224427687,
+      "calibration_slope": 0.947039438680418,
+      "recall_at_5pct_capacity": 0.08948743886593116,
+      "precision_at_5pct_capacity": 0.26088329687115713,
+      "selected_weight_fraction_at_5pct_capacity": 0.05000000000000004,
+      "recall_at_10pct_capacity": 0.16295458838094906,
+      "precision_at_10pct_capacity": 0.23753127140444513,
+      "selected_weight_fraction_at_10pct_capacity": 0.09999999999999999,
+      "recall_at_15pct_capacity": 0.22998147189574908,
+      "precision_at_15pct_capacity": 0.22348881350574457,
+      "selected_weight_fraction_at_15pct_capacity": 0.15000000000000002,
+      "recall_at_20pct_capacity": 0.3001725423448921,
+      "precision_at_20pct_capacity": 0.21877372810516865,
+      "selected_weight_fraction_at_20pct_capacity": 0.20000000000000007
+    },
+    {
+      "model": "routine_logit",
+      "split": "region_iecv",
+      "n": 29588,
+      "weighted_prevalence": 0.14576531643843837,
+      "auprc": 0.19759295911776315,
+      "auroc": 0.5946420324916449,
+      "brier": 0.12277371170348604,
+      "calibration_intercept": -0.11281206261805389,
+      "calibration_slope": 0.9352518500804309,
+      "recall_at_5pct_capacity": 0.08675027155127686,
+      "precision_at_5pct_capacity": 0.25290361567584635,
+      "selected_weight_fraction_at_5pct_capacity": 0.05000000000000006,
+      "recall_at_10pct_capacity": 0.1575132509728977,
+      "precision_at_10pct_capacity": 0.22959968871311576,
+      "selected_weight_fraction_at_10pct_capacity": 0.10000000000000007,
+      "recall_at_15pct_capacity": 0.23259472795585764,
+      "precision_at_15pct_capacity": 0.2260282941493204,
+      "selected_weight_fraction_at_15pct_capacity": 0.15000000000000008,
+      "recall_at_20pct_capacity": 0.3013517155175046,
+      "precision_at_20pct_capacity": 0.21963314085837674,
+      "selected_weight_fraction_at_20pct_capacity": 0.1999999999999999
+    },
+    {
+      "model": "routine_hgb",
+      "split": "school_nested",
+      "n": 29588,
+      "weighted_prevalence": 0.14576531643843837,
+      "auprc": 0.1949222341939904,
+      "auroc": 0.5933420906191778,
+      "brier": 0.12279458257415914,
+      "calibration_intercept": -0.06900882167292667,
+      "calibration_slope": 0.9595294060433062,
+      "recall_at_5pct_capacity": 0.0792419868995715,
+      "precision_at_5pct_capacity": 0.23101466591253267,
+      "selected_weight_fraction_at_5pct_capacity": 0.04999999999999998,
+      "recall_at_10pct_capacity": 0.1579889447420301,
+      "precision_at_10pct_capacity": 0.23029308524096975,
+      "selected_weight_fraction_at_10pct_capacity": 0.09999999999999998,
+      "recall_at_15pct_capacity": 0.22333351908398497,
+      "precision_at_15pct_capacity": 0.2170285405372472,
+      "selected_weight_fraction_at_15pct_capacity": 0.15000000000000002,
+      "recall_at_20pct_capacity": 0.29310640034804264,
+      "precision_at_20pct_capacity": 0.21362373598432005,
+      "selected_weight_fraction_at_20pct_capacity": 0.20000000000000015
+    },
+    {
+      "model": "routine_hgb",
+      "split": "region_iecv",
+      "n": 29588,
+      "weighted_prevalence": 0.14576531643843837,
+      "auprc": 0.19024461443106444,
+      "auroc": 0.590608292119179,
+      "brier": 0.12303570116181102,
+      "calibration_intercept": -0.11944764034579632,
+      "calibration_slope": 0.9315422169594259,
+      "recall_at_5pct_capacity": 0.08192793349128161,
+      "precision_at_5pct_capacity": 0.23884502301008012,
+      "selected_weight_fraction_at_5pct_capacity": 0.04999999999999997,
+      "recall_at_10pct_capacity": 0.15160246997487914,
+      "precision_at_10pct_capacity": 0.22098382008737094,
+      "selected_weight_fraction_at_10pct_capacity": 0.10000000000000007,
+      "recall_at_15pct_capacity": 0.22226753469983418,
+      "precision_at_15pct_capacity": 0.21599265019675268,
+      "selected_weight_fraction_at_15pct_capacity": 0.15000000000000005,
+      "recall_at_20pct_capacity": 0.2810642392974735,
+      "precision_at_20pct_capacity": 0.204847088903626,
+      "selected_weight_fraction_at_20pct_capacity": 0.19999999999999996
+    },
+    {
+      "model": "expanded_logit",
+      "split": "school_nested",
+      "n": 29588,
+      "weighted_prevalence": 0.14576531643843837,
+      "auprc": 0.30341680359226025,
+      "auroc": 0.7191720785591024,
+      "brier": 0.11442135502698371,
+      "calibration_intercept": -0.03177691436002372,
+      "calibration_slope": 0.9787922389055222,
+      "recall_at_5pct_capacity": 0.14142173911214498,
+      "precision_at_5pct_capacity": 0.41228769105912144,
+      "selected_weight_fraction_at_5pct_capacity": 0.05000000000000004,
+      "recall_at_10pct_capacity": 0.26537315919045984,
+      "precision_at_10pct_capacity": 0.38682202523665415,
+      "selected_weight_fraction_at_10pct_capacity": 0.10000000000000013,
+      "recall_at_15pct_capacity": 0.3537968439766529,
+      "precision_at_15pct_capacity": 0.34380872611451757,
+      "selected_weight_fraction_at_15pct_capacity": 0.14999999999999997,
+      "recall_at_20pct_capacity": 0.43297884726402885,
+      "precision_at_20pct_capacity": 0.31556649341295845,
+      "selected_weight_fraction_at_20pct_capacity": 0.19999999999999923
+    },
+    {
+      "model": "expanded_logit",
+      "split": "region_iecv",
+      "n": 29588,
+      "weighted_prevalence": 0.14576531643843837,
+      "auprc": 0.3019883854867625,
+      "auroc": 0.7177411058493117,
+      "brier": 0.11457731938297142,
+      "calibration_intercept": -0.06374109323402748,
+      "calibration_slope": 0.9634920325536388,
+      "recall_at_5pct_capacity": 0.1354065984786649,
+      "precision_at_5pct_capacity": 0.3947517135019026,
+      "selected_weight_fraction_at_5pct_capacity": 0.05000000000000007,
+      "recall_at_10pct_capacity": 0.26071305071247497,
+      "precision_at_10pct_capacity": 0.38002920336734497,
+      "selected_weight_fraction_at_10pct_capacity": 0.10000000000000014,
+      "recall_at_15pct_capacity": 0.34712952214320003,
+      "precision_at_15pct_capacity": 0.3373296309355165,
+      "selected_weight_fraction_at_15pct_capacity": 0.14999999999999997,
+      "recall_at_20pct_capacity": 0.43795253244682375,
+      "precision_at_20pct_capacity": 0.31919144738563493,
+      "selected_weight_fraction_at_20pct_capacity": 0.19999999999999915
+    },
+    {
+      "model": "expanded_hgb",
+      "split": "school_nested",
+      "n": 29588,
+      "weighted_prevalence": 0.14576531643843837,
+      "auprc": 0.32887827551473353,
+      "auroc": 0.7355117097794511,
+      "brier": 0.11179211554736776,
+      "calibration_intercept": 0.0032440389717294273,
+      "calibration_slope": 1.0004134808412457,
+      "recall_at_5pct_capacity": 0.1499331014900178,
+      "precision_at_5pct_capacity": 0.4371009196657783,
+      "selected_weight_fraction_at_5pct_capacity": 0.05000000000000006,
+      "recall_at_10pct_capacity": 0.28094462841968787,
+      "precision_at_10pct_capacity": 0.40951982663275327,
+      "selected_weight_fraction_at_10pct_capacity": 0.09999999999999991,
+      "recall_at_15pct_capacity": 0.38684608458508885,
+      "precision_at_15pct_capacity": 0.37592494621677613,
+      "selected_weight_fraction_at_15pct_capacity": 0.14999999999999988,
+      "recall_at_20pct_capacity": 0.4659263767403915,
+      "precision_at_20pct_capacity": 0.3395795287128924,
+      "selected_weight_fraction_at_20pct_capacity": 0.19999999999999926
+    },
+    {
+      "model": "expanded_hgb",
+      "split": "region_iecv",
+      "n": 29588,
+      "weighted_prevalence": 0.14576531643843837,
+      "auprc": 0.3233187868163714,
+      "auroc": 0.7337930793139256,
+      "brier": 0.11210579359334737,
+      "calibration_intercept": -0.022848559236201705,
+      "calibration_slope": 0.989713348630613,
+      "recall_at_5pct_capacity": 0.14816354423473024,
+      "precision_at_5pct_capacity": 0.4319421182003197,
+      "selected_weight_fraction_at_5pct_capacity": 0.05000000000000007,
+      "recall_at_10pct_capacity": 0.2879011528807154,
+      "precision_at_10pct_capacity": 0.419660026526486,
+      "selected_weight_fraction_at_10pct_capacity": 0.10000000000000024,
+      "recall_at_15pct_capacity": 0.38492447316172684,
+      "precision_at_15pct_capacity": 0.3740575842354552,
+      "selected_weight_fraction_at_15pct_capacity": 0.15000000000000005,
+      "recall_at_20pct_capacity": 0.4594922416903327,
+      "precision_at_20pct_capacity": 0.3348901600549939,
+      "selected_weight_fraction_at_20pct_capacity": 0.19999999999999993
+    }
+  ],
+  "checks": {
+    "routine_logit__school_nested": [
+      {
+        "fold": 0,
+        "fold_label": "0",
+        "train_n": 23666,
+        "test_n": 5922,
+        "train_schools": 772,
+        "test_schools": 193,
+        "school_overlap_n": 0,
+        "region_overlap_n": 18,
+        "test_events": 812,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 1,
+        "fold_label": "1",
+        "train_n": 23672,
+        "test_n": 5916,
+        "train_schools": 769,
+        "test_schools": 196,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 810,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 2,
+        "fold_label": "2",
+        "train_n": 23671,
+        "test_n": 5917,
+        "train_schools": 770,
+        "test_schools": 195,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 810,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 3,
+        "fold_label": "3",
+        "train_n": 23671,
+        "test_n": 5917,
+        "train_schools": 776,
+        "test_schools": 189,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 813,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 4,
+        "fold_label": "4",
+        "train_n": 23672,
+        "test_n": 5916,
+        "train_schools": 773,
+        "test_schools": 192,
+        "school_overlap_n": 0,
+        "region_overlap_n": 18,
+        "test_events": 812,
+        "selected_params": {
+          "C": 0.1
+        }
+      }
+    ],
+    "routine_logit__region_iecv": [
+      {
+        "fold": 0,
+        "fold_label": "Andalucía",
+        "train_n": 27956,
+        "test_n": 1632,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 229,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 1,
+        "fold_label": "Aragón",
+        "train_n": 28195,
+        "test_n": 1393,
+        "train_schools": 920,
+        "test_schools": 45,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 183,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 2,
+        "fold_label": "Asturias",
+        "train_n": 27901,
+        "test_n": 1687,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 240,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 3,
+        "fold_label": "Baleares",
+        "train_n": 28042,
+        "test_n": 1546,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 185,
+        "selected_params": {
+          "C": 10.0
+        }
+      },
+      {
+        "fold": 4,
+        "fold_label": "Canarias",
+        "train_n": 28110,
+        "test_n": 1478,
+        "train_schools": 911,
+        "test_schools": 54,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 252,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 5,
+        "fold_label": "Cantabria",
+        "train_n": 27935,
+        "test_n": 1653,
+        "train_schools": 913,
+        "test_schools": 52,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 253,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 6,
+        "fold_label": "Castilla - La Mancha",
+        "train_n": 28075,
+        "test_n": 1513,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 229,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 7,
+        "fold_label": "Castilla y León",
+        "train_n": 27892,
+        "test_n": 1696,
+        "train_schools": 910,
+        "test_schools": 55,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 186,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 8,
+        "fold_label": "Cataluña",
+        "train_n": 28062,
+        "test_n": 1526,
+        "train_schools": 914,
+        "test_schools": 51,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 202,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 9,
+        "fold_label": "Ceuta",
+        "train_n": 29248,
+        "test_n": 340,
+        "train_schools": 953,
+        "test_schools": 12,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 49,
+        "selected_params": {
+          "C": 10.0
+        }
+      },
+      {
+        "fold": 10,
+        "fold_label": "Comunidad Valenciana",
+        "train_n": 27992,
+        "test_n": 1596,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 267,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 11,
+        "fold_label": "Extremadura",
+        "train_n": 27942,
+        "test_n": 1646,
+        "train_schools": 911,
+        "test_schools": 54,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 186,
+        "selected_params": {
+          "C": 10.0
+        }
+      },
+      {
+        "fold": 12,
+        "fold_label": "Galicia",
+        "train_n": 27836,
+        "test_n": 1752,
+        "train_schools": 907,
+        "test_schools": 58,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 293,
+        "selected_params": {
+          "C": 1.0
+        }
+      },
+      {
+        "fold": 13,
+        "fold_label": "La Rioja",
+        "train_n": 28222,
+        "test_n": 1366,
+        "train_schools": 918,
+        "test_schools": 47,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 166,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 14,
+        "fold_label": "Madrid",
+        "train_n": 27553,
+        "test_n": 2035,
+        "train_schools": 903,
+        "test_schools": 62,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 318,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 15,
+        "fold_label": "Melilla",
+        "train_n": 29341,
+        "test_n": 247,
+        "train_schools": 955,
+        "test_schools": 10,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 46,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 16,
+        "fold_label": "Murcia",
+        "train_n": 27984,
+        "test_n": 1604,
+        "train_schools": 913,
+        "test_schools": 52,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 238,
+        "selected_params": {
+          "C": 10.0
+        }
+      },
+      {
+        "fold": 17,
+        "fold_label": "Navarra",
+        "train_n": 27827,
+        "test_n": 1761,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 196,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 18,
+        "fold_label": "País Vasco",
+        "train_n": 26471,
+        "test_n": 3117,
+        "train_schools": 870,
+        "test_schools": 95,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 339,
+        "selected_params": {
+          "C": 0.1
+        }
+      }
+    ],
+    "routine_hgb__school_nested": [
+      {
+        "fold": 0,
+        "fold_label": "0",
+        "train_n": 23666,
+        "test_n": 5922,
+        "train_schools": 772,
+        "test_schools": 193,
+        "school_overlap_n": 0,
+        "region_overlap_n": 18,
+        "test_events": 812,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 1,
+        "fold_label": "1",
+        "train_n": 23672,
+        "test_n": 5916,
+        "train_schools": 769,
+        "test_schools": 196,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 810,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 2,
+        "fold_label": "2",
+        "train_n": 23671,
+        "test_n": 5917,
+        "train_schools": 770,
+        "test_schools": 195,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 810,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 3,
+        "fold_label": "3",
+        "train_n": 23671,
+        "test_n": 5917,
+        "train_schools": 776,
+        "test_schools": 189,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 813,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 4,
+        "fold_label": "4",
+        "train_n": 23672,
+        "test_n": 5916,
+        "train_schools": 773,
+        "test_schools": 192,
+        "school_overlap_n": 0,
+        "region_overlap_n": 18,
+        "test_events": 812,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      }
+    ],
+    "routine_hgb__region_iecv": [
+      {
+        "fold": 0,
+        "fold_label": "Andalucía",
+        "train_n": 27956,
+        "test_n": 1632,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 229,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 1,
+        "fold_label": "Aragón",
+        "train_n": 28195,
+        "test_n": 1393,
+        "train_schools": 920,
+        "test_schools": 45,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 183,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 2,
+        "fold_label": "Asturias",
+        "train_n": 27901,
+        "test_n": 1687,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 240,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 3,
+        "fold_label": "Baleares",
+        "train_n": 28042,
+        "test_n": 1546,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 185,
+        "selected_params": {
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 4,
+        "fold_label": "Canarias",
+        "train_n": 28110,
+        "test_n": 1478,
+        "train_schools": 911,
+        "test_schools": 54,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 252,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 5,
+        "fold_label": "Cantabria",
+        "train_n": 27935,
+        "test_n": 1653,
+        "train_schools": 913,
+        "test_schools": 52,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 253,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 6,
+        "fold_label": "Castilla - La Mancha",
+        "train_n": 28075,
+        "test_n": 1513,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 229,
+        "selected_params": {
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 7,
+        "fold_label": "Castilla y León",
+        "train_n": 27892,
+        "test_n": 1696,
+        "train_schools": 910,
+        "test_schools": 55,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 186,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 8,
+        "fold_label": "Cataluña",
+        "train_n": 28062,
+        "test_n": 1526,
+        "train_schools": 914,
+        "test_schools": 51,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 202,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 9,
+        "fold_label": "Ceuta",
+        "train_n": 29248,
+        "test_n": 340,
+        "train_schools": 953,
+        "test_schools": 12,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 49,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 10,
+        "fold_label": "Comunidad Valenciana",
+        "train_n": 27992,
+        "test_n": 1596,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 267,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 11,
+        "fold_label": "Extremadura",
+        "train_n": 27942,
+        "test_n": 1646,
+        "train_schools": 911,
+        "test_schools": 54,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 186,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 12,
+        "fold_label": "Galicia",
+        "train_n": 27836,
+        "test_n": 1752,
+        "train_schools": 907,
+        "test_schools": 58,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 293,
+        "selected_params": {
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 13,
+        "fold_label": "La Rioja",
+        "train_n": 28222,
+        "test_n": 1366,
+        "train_schools": 918,
+        "test_schools": 47,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 166,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 14,
+        "fold_label": "Madrid",
+        "train_n": 27553,
+        "test_n": 2035,
+        "train_schools": 903,
+        "test_schools": 62,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 318,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 15,
+        "fold_label": "Melilla",
+        "train_n": 29341,
+        "test_n": 247,
+        "train_schools": 955,
+        "test_schools": 10,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 46,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 16,
+        "fold_label": "Murcia",
+        "train_n": 27984,
+        "test_n": 1604,
+        "train_schools": 913,
+        "test_schools": 52,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 238,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 17,
+        "fold_label": "Navarra",
+        "train_n": 27827,
+        "test_n": 1761,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 196,
+        "selected_params": {
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 18,
+        "fold_label": "País Vasco",
+        "train_n": 26471,
+        "test_n": 3117,
+        "train_schools": 870,
+        "test_schools": 95,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 339,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      }
+    ],
+    "expanded_logit__school_nested": [
+      {
+        "fold": 0,
+        "fold_label": "0",
+        "train_n": 23666,
+        "test_n": 5922,
+        "train_schools": 772,
+        "test_schools": 193,
+        "school_overlap_n": 0,
+        "region_overlap_n": 18,
+        "test_events": 812,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 1,
+        "fold_label": "1",
+        "train_n": 23672,
+        "test_n": 5916,
+        "train_schools": 769,
+        "test_schools": 196,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 810,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 2,
+        "fold_label": "2",
+        "train_n": 23671,
+        "test_n": 5917,
+        "train_schools": 770,
+        "test_schools": 195,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 810,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 3,
+        "fold_label": "3",
+        "train_n": 23671,
+        "test_n": 5917,
+        "train_schools": 776,
+        "test_schools": 189,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 813,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 4,
+        "fold_label": "4",
+        "train_n": 23672,
+        "test_n": 5916,
+        "train_schools": 773,
+        "test_schools": 192,
+        "school_overlap_n": 0,
+        "region_overlap_n": 18,
+        "test_events": 812,
+        "selected_params": {
+          "C": 1.0
+        }
+      }
+    ],
+    "expanded_logit__region_iecv": [
+      {
+        "fold": 0,
+        "fold_label": "Andalucía",
+        "train_n": 27956,
+        "test_n": 1632,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 229,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 1,
+        "fold_label": "Aragón",
+        "train_n": 28195,
+        "test_n": 1393,
+        "train_schools": 920,
+        "test_schools": 45,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 183,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 2,
+        "fold_label": "Asturias",
+        "train_n": 27901,
+        "test_n": 1687,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 240,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 3,
+        "fold_label": "Baleares",
+        "train_n": 28042,
+        "test_n": 1546,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 185,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 4,
+        "fold_label": "Canarias",
+        "train_n": 28110,
+        "test_n": 1478,
+        "train_schools": 911,
+        "test_schools": 54,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 252,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 5,
+        "fold_label": "Cantabria",
+        "train_n": 27935,
+        "test_n": 1653,
+        "train_schools": 913,
+        "test_schools": 52,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 253,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 6,
+        "fold_label": "Castilla - La Mancha",
+        "train_n": 28075,
+        "test_n": 1513,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 229,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 7,
+        "fold_label": "Castilla y León",
+        "train_n": 27892,
+        "test_n": 1696,
+        "train_schools": 910,
+        "test_schools": 55,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 186,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 8,
+        "fold_label": "Cataluña",
+        "train_n": 28062,
+        "test_n": 1526,
+        "train_schools": 914,
+        "test_schools": 51,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 202,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 9,
+        "fold_label": "Ceuta",
+        "train_n": 29248,
+        "test_n": 340,
+        "train_schools": 953,
+        "test_schools": 12,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 49,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 10,
+        "fold_label": "Comunidad Valenciana",
+        "train_n": 27992,
+        "test_n": 1596,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 267,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 11,
+        "fold_label": "Extremadura",
+        "train_n": 27942,
+        "test_n": 1646,
+        "train_schools": 911,
+        "test_schools": 54,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 186,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 12,
+        "fold_label": "Galicia",
+        "train_n": 27836,
+        "test_n": 1752,
+        "train_schools": 907,
+        "test_schools": 58,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 293,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 13,
+        "fold_label": "La Rioja",
+        "train_n": 28222,
+        "test_n": 1366,
+        "train_schools": 918,
+        "test_schools": 47,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 166,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 14,
+        "fold_label": "Madrid",
+        "train_n": 27553,
+        "test_n": 2035,
+        "train_schools": 903,
+        "test_schools": 62,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 318,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 15,
+        "fold_label": "Melilla",
+        "train_n": 29341,
+        "test_n": 247,
+        "train_schools": 955,
+        "test_schools": 10,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 46,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 16,
+        "fold_label": "Murcia",
+        "train_n": 27984,
+        "test_n": 1604,
+        "train_schools": 913,
+        "test_schools": 52,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 238,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 17,
+        "fold_label": "Navarra",
+        "train_n": 27827,
+        "test_n": 1761,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 196,
+        "selected_params": {
+          "C": 0.1
+        }
+      },
+      {
+        "fold": 18,
+        "fold_label": "País Vasco",
+        "train_n": 26471,
+        "test_n": 3117,
+        "train_schools": 870,
+        "test_schools": 95,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 339,
+        "selected_params": {
+          "C": 0.1
+        }
+      }
+    ],
+    "expanded_hgb__school_nested": [
+      {
+        "fold": 0,
+        "fold_label": "0",
+        "train_n": 23666,
+        "test_n": 5922,
+        "train_schools": 772,
+        "test_schools": 193,
+        "school_overlap_n": 0,
+        "region_overlap_n": 18,
+        "test_events": 812,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 1,
+        "fold_label": "1",
+        "train_n": 23672,
+        "test_n": 5916,
+        "train_schools": 769,
+        "test_schools": 196,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 810,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 2,
+        "fold_label": "2",
+        "train_n": 23671,
+        "test_n": 5917,
+        "train_schools": 770,
+        "test_schools": 195,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 810,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 3,
+        "fold_label": "3",
+        "train_n": 23671,
+        "test_n": 5917,
+        "train_schools": 776,
+        "test_schools": 189,
+        "school_overlap_n": 0,
+        "region_overlap_n": 19,
+        "test_events": 813,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 4,
+        "fold_label": "4",
+        "train_n": 23672,
+        "test_n": 5916,
+        "train_schools": 773,
+        "test_schools": 192,
+        "school_overlap_n": 0,
+        "region_overlap_n": 18,
+        "test_events": 812,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      }
+    ],
+    "expanded_hgb__region_iecv": [
+      {
+        "fold": 0,
+        "fold_label": "Andalucía",
+        "train_n": 27956,
+        "test_n": 1632,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 229,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 1,
+        "fold_label": "Aragón",
+        "train_n": 28195,
+        "test_n": 1393,
+        "train_schools": 920,
+        "test_schools": 45,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 183,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 2,
+        "fold_label": "Asturias",
+        "train_n": 27901,
+        "test_n": 1687,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 240,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 3,
+        "fold_label": "Baleares",
+        "train_n": 28042,
+        "test_n": 1546,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 185,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 4,
+        "fold_label": "Canarias",
+        "train_n": 28110,
+        "test_n": 1478,
+        "train_schools": 911,
+        "test_schools": 54,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 252,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 5,
+        "fold_label": "Cantabria",
+        "train_n": 27935,
+        "test_n": 1653,
+        "train_schools": 913,
+        "test_schools": 52,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 253,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 6,
+        "fold_label": "Castilla - La Mancha",
+        "train_n": 28075,
+        "test_n": 1513,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 229,
+        "selected_params": {
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 7,
+        "fold_label": "Castilla y León",
+        "train_n": 27892,
+        "test_n": 1696,
+        "train_schools": 910,
+        "test_schools": 55,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 186,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 8,
+        "fold_label": "Cataluña",
+        "train_n": 28062,
+        "test_n": 1526,
+        "train_schools": 914,
+        "test_schools": 51,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 202,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 9,
+        "fold_label": "Ceuta",
+        "train_n": 29248,
+        "test_n": 340,
+        "train_schools": 953,
+        "test_schools": 12,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 49,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 10,
+        "fold_label": "Comunidad Valenciana",
+        "train_n": 27992,
+        "test_n": 1596,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 267,
+        "selected_params": {
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 11,
+        "fold_label": "Extremadura",
+        "train_n": 27942,
+        "test_n": 1646,
+        "train_schools": 911,
+        "test_schools": 54,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 186,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 12,
+        "fold_label": "Galicia",
+        "train_n": 27836,
+        "test_n": 1752,
+        "train_schools": 907,
+        "test_schools": 58,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 293,
+        "selected_params": {
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 13,
+        "fold_label": "La Rioja",
+        "train_n": 28222,
+        "test_n": 1366,
+        "train_schools": 918,
+        "test_schools": 47,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 166,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 14,
+        "fold_label": "Madrid",
+        "train_n": 27553,
+        "test_n": 2035,
+        "train_schools": 903,
+        "test_schools": 62,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 318,
+        "selected_params": {
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 15,
+        "fold_label": "Melilla",
+        "train_n": 29341,
+        "test_n": 247,
+        "train_schools": 955,
+        "test_schools": 10,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 46,
+        "selected_params": {
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 16,
+        "fold_label": "Murcia",
+        "train_n": 27984,
+        "test_n": 1604,
+        "train_schools": 913,
+        "test_schools": 52,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 238,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 17,
+        "fold_label": "Navarra",
+        "train_n": 27827,
+        "test_n": 1761,
+        "train_schools": 912,
+        "test_schools": 53,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 196,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      },
+      {
+        "fold": 18,
+        "fold_label": "País Vasco",
+        "train_n": 26471,
+        "test_n": 3117,
+        "train_schools": 870,
+        "test_schools": 95,
+        "school_overlap_n": 0,
+        "region_overlap_n": 0,
+        "test_events": 339,
+        "selected_params": {
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 50,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "l2_regularization": 1.0
+        }
+      }
+    ]
+  },
+  "bootstrap_scope": "fixed out-of-fold predictions; schools resampled with replacement; does not include refitting uncertainty",
+  "escs_weighted_tertile_cuts": [
+    -0.3665,
+    0.5808267518943604
+  ]
+}

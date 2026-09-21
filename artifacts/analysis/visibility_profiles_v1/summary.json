@@ -1,0 +1,16 @@
+{
+  "analysis_id": "visibility_profiles_v1",
+  "status": "pass",
+  "n_low_life_satisfaction": 4057,
+  "schools": 965,
+  "routine_recall": 0.16295458838094906,
+  "student_experience_recall": 0.26537315919045984,
+  "group_shares": {
+    "routine_visible": 0.16295458838094906,
+    "student_experience_only": 0.16826080970973054,
+    "missed_by_both": 0.6687846019093204
+  },
+  "interpretation_boundary": "Groups are derived from fixed-capacity rules using the profiled variables; differences are descriptive of operational visibility pathways, not independent or causal effects.",
+  "failures": [],
+  "next_route": "write"
+}

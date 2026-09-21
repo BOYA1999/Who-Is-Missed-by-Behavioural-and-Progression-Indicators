@@ -1,0 +1,6 @@
+fold,early_stopping,n_iter,params
+0,False,200,"{""l2_regularization"": 1.0, ""learning_rate"": 0.05, ""max_iter"": 200, ""max_leaf_nodes"": 7, ""min_samples_leaf"": 100}"
+1,False,200,"{""l2_regularization"": 1.0, ""learning_rate"": 0.05, ""max_iter"": 200, ""max_leaf_nodes"": 7, ""min_samples_leaf"": 100}"
+2,False,200,"{""l2_regularization"": 1.0, ""learning_rate"": 0.05, ""max_iter"": 200, ""max_leaf_nodes"": 7, ""min_samples_leaf"": 50}"
+3,False,200,"{""l2_regularization"": 1.0, ""learning_rate"": 0.05, ""max_iter"": 200, ""max_leaf_nodes"": 7, ""min_samples_leaf"": 50}"
+4,False,200,"{""l2_regularization"": 1.0, ""learning_rate"": 0.05, ""max_iter"": 200, ""max_leaf_nodes"": 7, ""min_samples_leaf"": 100}"

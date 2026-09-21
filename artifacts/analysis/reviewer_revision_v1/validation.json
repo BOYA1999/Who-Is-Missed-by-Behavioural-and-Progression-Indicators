@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "checks": {
+    "analytic_rows": true,
+    "schools": true,
+    "folds_complete": true,
+    "routine_refit_reproduces_baseline": true,
+    "expanded_refit_reproduces_baseline": true,
+    "all_predictions_finite": true,
+    "overlap_cells_sum_to_one": true,
+    "brr_replicates": 80,
+    "bootstrap_replicates": 1000
+  },
+  "claim_boundary": "Conditional fixed-score audit of model-defined coverage; not real-world detection, diagnosis, model-refitting uncertainty, causal inference, or deployment validation."
+}

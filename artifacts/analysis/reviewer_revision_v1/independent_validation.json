@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "failures": [],
+  "checks": {
+    "rows": 29588,
+    "models": 9,
+    "brr_rows": 720,
+    "regions": 19,
+    "manifest_entries_checked": 28
+  },
+  "independent_recomputed_metrics": {
+    "routine_logit": {
+      "auprc": 0.19968719409216784,
+      "recall": 0.16295458838094906,
+      "precision": 0.23753127140444513,
+      "capacity": 0.09999999999999999
+    },
+    "expanded_logit": {
+      "auprc": 0.30341680359226025,
+      "recall": 0.26537315919045984,
+      "precision": 0.38682202523665415,
+      "capacity": 0.10000000000000013
+    },
+    "expanded_hgb": {
+      "auprc": 0.32887827551473353,
+      "recall": 0.28094462841968787,
+      "precision": 0.40951982663275327,
+      "capacity": 0.09999999999999991
+    },
+    "routine_plus_belong_logit": {
+      "auprc": 0.2543973232783181,
+      "recall": 0.2056873487312644,
+      "precision": 0.2998208147519604,
+      "capacity": 0.10000000000000049
+    },
+    "routine_plus_bullied_logit": {
+      "auprc": 0.2678957781434213,
+      "recall": 0.23228273058334806,
+      "precision": 0.33858765726666185,
+      "capacity": 0.10000000000000021
+    },
+    "routine_plus_teachsup_logit": {
+      "auprc": 0.20801832132075235,
+      "recall": 0.1697031940924777,
+      "precision": 0.24736839787503734,
+      "capacity": 0.10000000000000002
+    },
+    "experiences_only_logit": {
+      "auprc": 0.2983571349766336,
+      "recall": 0.2572525574689378,
+      "precision": 0.37498500444057214,
+      "capacity": 0.10000000000000016
+    },
+    "expanded_altbully_logit": {
+      "auprc": 0.2903101417069509,
+      "recall": 0.23760750125356608,
+      "precision": 0.3463493260837262,
+      "capacity": 0.10000000000000024
+    },
+    "expanded_hgb_no_earlystop": {
+      "auprc": 0.3282603805831544,
+      "recall": 0.28171845620330904,
+      "precision": 0.4106477991502371,
+      "capacity": 0.09999999999999995
+    }
+  }
+}

@@ -1,0 +1,3 @@
+model,boundary_students,boundary_weight_share,selected_boundary_weight_share,allocation_fraction
+routine_logit,11,0.0007569282531692396,0.00041503669381194786,0.548317085634206
+expanded_logit,1,2.2440269570916687e-05,2.0534963448758392e-05,0.915094330033021

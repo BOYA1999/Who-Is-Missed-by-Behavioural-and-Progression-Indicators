@@ -1,0 +1,47 @@
+{
+  "campaign_id": "campaign_v1",
+  "status": "success",
+  "parent_run": "artifacts/experiment/main_v1",
+  "started_utc": "2026-09-18T03:45:36.955681+00:00",
+  "ended_utc": "2026-09-18T03:46:53.754045+00:00",
+  "slices": [
+    {
+      "slice_id": "S1_continuous_outcome",
+      "question": "Does the information-tier result survive without dichotomization?",
+      "fixed": "Spain sample, features, weights, school-nested validation",
+      "changed": "0-10 outcome and regression metrics",
+      "claim_update": "strengthens",
+      "comparability": "parallel outcome sensitivity; not numerically comparable to AUPRC",
+      "next_action": "retain as main-text robustness"
+    },
+    {
+      "slice_id": "S2_complete_case",
+      "question": "Is the main binary result driven by imputation?",
+      "fixed": "binary outcome, model classes, weights, school grouping",
+      "changed": "complete-case population and no predictor imputation",
+      "claim_update": "strengthens",
+      "comparability": "directly compared on identical complete-case population",
+      "next_action": "report in appendix with one main-text sentence"
+    },
+    {
+      "slice_id": "S3_audit_attributes",
+      "question": "Do audit attributes materially improve performance or gap profiles?",
+      "fixed": "binary outcome, sample, weights, split and capacity",
+      "changed": "sex, immigration and ESCS added as predictors",
+      "claim_update": "narrows",
+      "comparability": "feature-policy sensitivity",
+      "next_action": "keep attributes for auditing rather than ranking"
+    },
+    {
+      "slice_id": "S4_within_school_capacity",
+      "question": "Does the result hold with local school capacity?",
+      "fixed": "main OOF predictions, outcome, weights and 10% capacity",
+      "changed": "global versus within-school allocation",
+      "claim_update": "strengthens",
+      "comparability": "allocation-policy sensitivity",
+      "next_action": "use local-capacity result for school application framing"
+    }
+  ],
+  "next_route": "paper_outline_and_write",
+  "claim_boundary": "cross-sectional contemporaneous identification audit; no diagnosis or causal/deployment claim"
+}

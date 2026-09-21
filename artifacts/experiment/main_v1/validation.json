@@ -1,0 +1,110 @@
+{
+  "status": "pass_with_caveats",
+  "failures": [],
+  "caveats": [
+    "HGB AUPRC gain is positive but its lower interval bound is below the practical threshold",
+    "HGB recall gain does not robustly meet the practical threshold"
+  ],
+  "independent_recomputation": {
+    "weighted_prevalence": 0.14576531643843837,
+    "auprc": 0.32887827551473353,
+    "auroc": 0.7355117097794511,
+    "brier": 0.11179211554736776,
+    "recall_at_10pct_capacity": 0.28094462841968787,
+    "precision_at_10pct_capacity": 0.4095198266327533,
+    "selected_fraction": 0.09999999999999991
+  },
+  "paired_bootstrap_deltas": [
+    {
+      "contrast": "expanded_hgb-expanded_logit",
+      "metric": "auprc",
+      "mean_delta": 0.02563137149628076,
+      "ci_2.5": 0.015399051553982577,
+      "ci_97.5": 0.036301760944864106
+    },
+    {
+      "contrast": "expanded_hgb-expanded_logit",
+      "metric": "recall_at_10pct_capacity",
+      "mean_delta": 0.015745796484866126,
+      "ci_2.5": 0.0031717900499181064,
+      "ci_97.5": 0.029096757853940187
+    },
+    {
+      "contrast": "expanded_logit-routine_logit",
+      "metric": "auprc",
+      "mean_delta": 0.10393294269773391,
+      "ci_2.5": 0.08977805369184735,
+      "ci_97.5": 0.1175170078172904
+    },
+    {
+      "contrast": "expanded_logit-routine_logit",
+      "metric": "recall_at_10pct_capacity",
+      "mean_delta": 0.1037694940710965,
+      "ci_2.5": 0.08460990019536892,
+      "ci_97.5": 0.1220989708895441
+    },
+    {
+      "contrast": "routine_logit-routine_hgb",
+      "metric": "auprc",
+      "mean_delta": 0.004816127217956738,
+      "ci_2.5": 0.00035202893674890636,
+      "ci_97.5": 0.009779733220718028
+    },
+    {
+      "contrast": "routine_logit-routine_hgb",
+      "metric": "recall_at_10pct_capacity",
+      "mean_delta": 0.0054338257124796644,
+      "ci_2.5": -0.007268615475164246,
+      "ci_97.5": 0.018436394965823034
+    }
+  ],
+  "regional_ranges": {
+    "auprc": [
+      0.261585984167914,
+      0.4769792130729487
+    ],
+    "auroc": [
+      0.634911260539105,
+      0.8052163163621847
+    ],
+    "calibration_intercept": [
+      -0.5301623880876034,
+      0.548898712209415
+    ],
+    "calibration_slope": [
+      0.597746108899366,
+      1.3618945499167223
+    ],
+    "recall_at_10pct_capacity": [
+      0.2126467725444097,
+      0.3942960652813479
+    ]
+  },
+  "fairness_recall_gaps": {
+    "escs_weighted_tertile": {
+      "group_recalls": {
+        "low": 0.3091876923093172,
+        "middle": 0.2615844156339236,
+        "high": 0.2730991743711944
+      },
+      "max_minus_min": 0.0476032766753936
+    },
+    "immigration_background": {
+      "group_recalls": {
+        "native": 0.2684121252045728,
+        "immigrant": 0.3147547399098724
+      },
+      "max_minus_min": 0.0463426147052996
+    },
+    "sex": {
+      "group_recalls": {
+        "female": 0.2977257178623501,
+        "male": 0.2506666571372513
+      },
+      "max_minus_min": 0.0470590607250988
+    }
+  },
+  "pre_finalize_manifest_mismatches": [],
+  "executed_script_hash_matches": true,
+  "review_scope": "core binary outcome, school-nested and region-IECV outputs; sensitivity analyses not yet reviewed"
+}

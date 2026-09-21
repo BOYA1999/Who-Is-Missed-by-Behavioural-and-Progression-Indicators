@@ -1,0 +1,32 @@
+{
+  "contract_id": "pisa2022_spain_proxy_audit_v1",
+  "status": "frozen_for_pilot",
+  "population": "PISA 2022 Spain students with valid ST016Q01NA",
+  "outcome": {
+    "name": "low_life_satisfaction",
+    "definition": "ST016Q01NA between 0 and 4 inclusive",
+    "continuous_sensitivity": "ST016Q01NA 0-10"
+  },
+  "primary_split": "5-fold cross-validation grouped by CNTSCHID",
+  "comparator_split": "5-fold student-level stratified cross-validation",
+  "weight": "W_FSTUWT",
+  "primary_metric": "recall_at_10pct_capacity",
+  "required_metric_keys": [
+    "n",
+    "weighted_prevalence",
+    "auprc",
+    "auroc",
+    "brier",
+    "calibration_intercept",
+    "calibration_slope",
+    "recall_at_10pct_capacity",
+    "precision_at_10pct_capacity"
+  ],
+  "capacity_sensitivities": [0.05, 0.10, 0.15, 0.20],
+  "fairness_groups": ["sex", "escs_weighted_tertile", "immigration_background"],
+  "minimum_practical_delta": {
+    "recall_at_10pct_capacity": 0.03,
+    "auprc": 0.02
+  },
+  "claim_boundary": "offline proxy-rule audit; not diagnosis, causal inference, intervention evaluation, or deployment validation"
+}
