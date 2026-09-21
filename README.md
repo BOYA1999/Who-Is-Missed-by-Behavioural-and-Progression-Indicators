@@ -7,10 +7,7 @@ This repository is a public-code candidate for a secondary analysis of the PISA 
 
 The analysis asks who enters, leaves, or remains outside a weighted priority set when the information used for ranking changes. It is a cross-sectional allocation audit, not a clinical screen, diagnosis, causal analysis, prospective prediction study, or validated referral protocol.
 
-## Release status
-
-This is a **local GitHub upload candidate**. It has not been uploaded or released. Author metadata, citation details, repository URL or DOI, and the software licence remain pending author approval. See [RELEASE_STATUS.md](RELEASE_STATUS.md), [LICENSE_PENDING.md](LICENSE_PENDING.md), and [CITATION_PENDING.md](CITATION_PENDING.md).
-
+#
 ## What is included
 
 - analysis and validation scripts with repository-relative paths;
