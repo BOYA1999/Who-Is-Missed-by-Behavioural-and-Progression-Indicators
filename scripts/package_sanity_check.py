@@ -23,13 +23,13 @@ def digest(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
 
 
-files = [path for path in ROOT.rglob("*") if path.is_file()]
+files = [path for path in ROOT.rglob("*") if path.is_file() and ".git" not in path.parts]
 assert not FORBIDDEN_NAMES.intersection(path.name for path in files)
 assert not any(path.suffix.lower() in {".sav", ".zsav", ".por", ".doc", ".docx"} for path in files)
 assert not any(path.suffix.lower() in {".pyc", ".pyo"} or "__pycache__" in path.parts for path in files)
 assert max(path.stat().st_size for path in files) < 100_000_000
 
-pattern = re.compile(r"(?:[A-Za-z]:\\|file:///|Users[/\\]ADMIN)", re.IGNORECASE)
+pattern = re.compile(r"(?:[A-Za-z]:\\|file:///|Users[/\\][^/\\]+)", re.IGNORECASE)
 for path in files:
     if path.suffix.lower() in TEXT_SUFFIXES and path.name != MANIFEST.name and path.resolve() != Path(__file__).resolve():
         text = path.read_text(encoding="utf-8-sig", errors="ignore")

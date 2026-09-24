@@ -167,7 +167,7 @@ def main():
         "complete_case_n": complete_n,
         "reconstructed_school_overlap_folds": school_overlap,
         "audit_attribute_gap_increases": gap_increases,
-        "review_scope": "four pre-specified sensitivity slices; no model-refitting uncertainty intervals",
+        "review_scope": "four selected sensitivity slices; no model-refitting uncertainty intervals",
     }
     (OUT / "validation.json").write_text(
         json.dumps(validation, ensure_ascii=False, indent=2), encoding="utf-8"

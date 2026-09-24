@@ -1,0 +1,166 @@
+{
+  "20260918_routine": {
+    "fold_train_test_school_overlap": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fold_selected_parameters": [
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      }
+    ],
+    "inner_tuning_rows": 15,
+    "max_abs_stored_prediction_difference": 9.71445146547012e-17
+  },
+  "20260918_expanded": {
+    "fold_train_test_school_overlap": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fold_selected_parameters": [
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 1.0
+      }
+    ],
+    "inner_tuning_rows": 15,
+    "max_abs_stored_prediction_difference": 1.1102230246251565e-16
+  },
+  "20260923_routine": {
+    "fold_train_test_school_overlap": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fold_selected_parameters": [
+      {
+        "C": 1.0
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 1.0
+      }
+    ],
+    "inner_tuning_rows": 15
+  },
+  "20260923_expanded": {
+    "fold_train_test_school_overlap": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fold_selected_parameters": [
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      }
+    ],
+    "inner_tuning_rows": 15
+  },
+  "20260924_routine": {
+    "fold_train_test_school_overlap": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fold_selected_parameters": [
+      {
+        "C": 0.1
+      },
+      {
+        "C": 10.0
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 0.1
+      }
+    ],
+    "inner_tuning_rows": 15
+  },
+  "20260924_expanded": {
+    "fold_train_test_school_overlap": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fold_selected_parameters": [
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 0.1
+      }
+    ],
+    "inner_tuning_rows": 15
+  }
+}

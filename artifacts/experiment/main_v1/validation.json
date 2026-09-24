@@ -2,8 +2,8 @@
   "status": "pass_with_caveats",
   "failures": [],
   "caveats": [
-    "HGB AUPRC gain is positive but its lower interval bound is below the practical threshold",
-    "HGB recall gain does not robustly meet the practical threshold"
+    "HGB AUPRC gain is positive but its lower interval bound is below the researcher-set descriptive margin",
+    "HGB recall gain has a lower interval bound below the researcher-set descriptive margin"
   ],
   "independent_recomputation": {
     "weighted_prevalence": 0.14576531643843837,

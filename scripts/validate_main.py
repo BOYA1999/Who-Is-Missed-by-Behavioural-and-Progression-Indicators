@@ -140,9 +140,9 @@ def main():
         & (deltas["metric"] == "recall_at_10pct_capacity")
     ].iloc[0]
     if complex_auprc["ci_2.5"] < contract["minimum_practical_delta"]["auprc"]:
-        warnings.append("HGB AUPRC gain is positive but its lower interval bound is below the practical threshold")
+        warnings.append("HGB AUPRC gain is positive but its lower interval bound is below the researcher-set descriptive margin")
     if complex_recall["ci_2.5"] < contract["minimum_practical_delta"]["recall_at_10pct_capacity"]:
-        warnings.append("HGB recall gain does not robustly meet the practical threshold")
+        warnings.append("HGB recall gain has a lower interval bound below the researcher-set descriptive margin")
 
     regional = fold_metrics.loc[
         (fold_metrics["model"] == "expanded_hgb") & (fold_metrics["split"] == "region_iecv")
@@ -211,7 +211,7 @@ def main():
 - Required metric and probability checks: {'passed' if not failures else 'see failures'}.
 - Independent expanded-HGB recomputation matched the reported AUPRC, AUROC, Brier, 10% capacity recall and precision within 1e-10.
 - Expanded HGB minus expanded logistic, paired school bootstrap: AUPRC {complex_auprc['mean_delta']:+.3f} (95% interval {complex_auprc['ci_2.5']:+.3f} to {complex_auprc['ci_97.5']:+.3f}); recall {complex_recall['mean_delta']:+.3f} ({complex_recall['ci_2.5']:+.3f} to {complex_recall['ci_97.5']:+.3f}).
-- The nonlinear gain is positive, but practical superiority is not robust: the AUPRC interval crosses the pre-specified +0.02 practical threshold and the recall gain remains below +0.03.
+- The nonlinear gain is positive. Its paired intervals exclude zero, but their lower bounds do not exceed the researcher-set descriptive comparison margins of +0.02 AUPRC or +0.03 recall; those margins are not cost-validated.
 - Region IECV reveals heterogeneity despite similar pooled performance: AUROC {regional_ranges['auroc'][0]:.3f}–{regional_ranges['auroc'][1]:.3f}, calibration slope {regional_ranges['calibration_slope'][0]:.3f}–{regional_ranges['calibration_slope'][1]:.3f}, and 10% capacity recall {regional_ranges['recall_at_10pct_capacity'][0]:.3f}–{regional_ranges['recall_at_10pct_capacity'][1]:.3f}. Small Ceuta and Melilla folds contribute to the extremes.
 - Intervals from the school bootstrap condition on fixed OOF predictions and omit model-refitting uncertainty.
 - Continuous-outcome and missing-data sensitivities remain outside this validation scope.

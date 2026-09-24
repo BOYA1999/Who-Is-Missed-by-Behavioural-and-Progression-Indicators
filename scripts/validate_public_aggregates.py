@@ -42,6 +42,29 @@ assert targeted["status"] == "pass"
 assert targeted["max_capacity_identity_residual"] < 2e-15
 assert targeted["bootstrap_recalculation_max_difference"] < 1e-15
 
+stability = ROOT / "artifacts" / "stability_revision_20260923"
+runs = pd.read_csv(stability / "run_metrics_aggregate.csv")
+cross = pd.read_csv(stability / "cross_information_aggregate.csv")
+within = pd.read_csv(stability / "within_information_aggregate.csv")
+local = pd.read_csv(stability / "within_school_overlap_aggregate.csv")
+assert set(runs["seed"]) == {20260918, 20260923, 20260924}
+assert len(runs) == 6 and len(cross) == 3 and len(within) == 6
+np.testing.assert_allclose(runs["selected_weight_share"], 0.10, rtol=0, atol=2e-15)
+np.testing.assert_allclose(
+    cross["overlap_all_student_weight_share"] + cross["first_only_all_student_weight_share"],
+    0.10, rtol=0, atol=2e-15,
+)
+np.testing.assert_allclose(
+    within["overlap_all_student_weight_share"] + within["first_only_all_student_weight_share"],
+    0.10, rtol=0, atol=2e-15,
+)
+assert cross["overlap_all_student_weight_share"].between(0.0356, 0.0364).all()
+assert within.query("information_set == 'routine'")["overlap_all_student_weight_share"].between(0.0906, 0.0921).all()
+assert within.query("information_set == 'expanded'")["overlap_all_student_weight_share"].between(0.0946, 0.0952).all()
+assert set(local["cell"]) == {"both", "bp_only", "expanded_only", "neither"}
+np.testing.assert_allclose(local["share_of_all_weight"].sum(), 1.0, rtol=0, atol=2e-15)
+np.testing.assert_allclose(local["share_of_low_ls_weight"].sum(), 1.0, rtol=0, atol=2e-15)
+
 for path in ROOT.rglob("*.csv*"):
     frame = pd.read_csv(path, nrows=0)
     forbidden = {"CNTSTUID", "CNTSCHID"}.intersection(frame.columns)

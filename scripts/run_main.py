@@ -646,7 +646,7 @@ The nested school validation and 19-region internal–external validation comple
 
 ## Evidence classification
 
-The main operational finding is supported if the final QA confirms these outputs: routine visible information improves on random selection but misses most low-life-satisfaction students; school-experience scales add substantial information; the extra gain from a nonlinear model is evaluated against the pre-specified practical thresholds rather than statistical significance alone.
+The information-set comparison is supported if the final QA confirms these outputs: behavioural–progression indicators miss most students reporting low life satisfaction, while school-experience measures change coverage and priority membership. The nonlinear model's point gain is secondary and does not by itself establish practical superiority.
 
 ## Boundaries
 
@@ -658,14 +658,13 @@ Run claim-focused sensitivity analyses for the continuous 0–10 outcome, comple
 """
     (RUN_DIR / "summary.md").write_text(summary, encoding="utf-8")
 
-    practical_complex = complex_auprc_delta >= 0.02 or complex_recall_delta >= 0.03
     claim_validation = f"""# Claim validation
 
 | Claim | Metric | Observed | Verdict |
 |---|---|---|---|
 | Routine proxies beat random capacity but miss most cases | recall at 10% capacity | random 0.100; routine {routine['recall_at_10pct_capacity']:.3f} | supported |
 | School-experience scales add information | AUPRC and recall, expanded logit minus routine logit | AUPRC {expanded_logit['auprc'] - routine['auprc']:+.3f}; recall {expanded_logit['recall_at_10pct_capacity'] - routine['recall_at_10pct_capacity']:+.3f} | supported |
-| Nonlinear complexity has practical value | expanded HGB minus expanded logit; thresholds +0.02 AUPRC or +0.03 recall | AUPRC {complex_auprc_delta:+.3f}; recall {complex_recall_delta:+.3f} | {'supported' if practical_complex else 'not supported'} |
+| Nonlinear model has a positive point gain | expanded HGB minus expanded logit; full-sample comparison only | AUPRC {complex_auprc_delta:+.3f}; recall {complex_recall_delta:+.3f} | positive point gain; assess interval and costs separately |
 | Performance transports across Spanish regions | region IECV versus school nested | AUPRC difference {region_drop:+.3f} | {'supported directionally' if abs(region_drop) < 0.02 else 'narrowed by regional shift'} |
 
 Claim status remains conditional on sensitivity analyses and rendered table/figure QA.

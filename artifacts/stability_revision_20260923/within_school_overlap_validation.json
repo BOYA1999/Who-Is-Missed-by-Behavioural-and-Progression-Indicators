@@ -1,0 +1,14 @@
+{
+  "routine_logit": {
+    "recall": 0.16154682339801804,
+    "precision": 0.23547923832236628,
+    "capacity": 0.09999999999999999
+  },
+  "expanded_logit": {
+    "recall": 0.24159642520549068,
+    "precision": 0.35216379370473866,
+    "capacity": 0.09999999999999999
+  },
+  "replacement_share_of_bp_selected_low_ls": 0.5039659652651923,
+  "national_both_reproduced": 0.03626423507012329
+}

@@ -30,7 +30,8 @@ The wrapper executes:
 5. component ablations, alternative bullying composite, calibration, subgroup, regional, and inclusion audits;
 6. school-cluster bootstrap with priority sets reselected in every replicate;
 7. targeted consistency checks;
-8. aggregate consistency checks.
+8. three-seed paired school-split list-stability analysis and within-school overlap check;
+9. aggregate consistency checks.
 
 ## Environment
 
@@ -54,5 +55,6 @@ These files are required for some full-run validation steps but are intentionall
 - School-held-out predictions are used to compare ranking information sets.
 - Fay-BRR intervals address designated survey-estimate variation.
 - Prediction-derived Fay-BRR quantities and school-bootstrap intervals reuse stored out-of-fold scores; they do not include model-refitting or tuning uncertainty.
+- The three-seed list-stability check refits and retunes both logistic models for each paired school split. Its observed ranges address fold-assignment sensitivity only; they are not confidence intervals or a full model-uncertainty analysis.
 - The 10% capacity is an analytic constraint, not an estimate of available Spanish school resources.
 - Regional and subgroup results are descriptive or exploratory and do not establish fairness, transferability, or operational validity.

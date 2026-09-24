@@ -1,13 +1,12 @@
 # PISA 2022 Spain fixed-capacity school-support audit
 
-This repository is a public-code candidate for a secondary analysis of the PISA 2022 Spain student questionnaire. It compares two information sets under the same hypothetical follow-up capacity:
+This repository contains code and aggregate results for a secondary analysis of the PISA 2022 Spain student questionnaire. It compares two information sets under the same hypothetical follow-up capacity:
 
 - behavioural and academic-progression indicators; and
 - the same indicators plus student-reported belonging, bullying exposure, and mathematics-teacher support.
 
 The analysis asks who enters, leaves, or remains outside a weighted priority set when the information used for ranking changes. It is a cross-sectional allocation audit, not a clinical screen, diagnosis, causal analysis, prospective prediction study, or validated referral protocol.
 
-#
 ## What is included
 
 - analysis and validation scripts with repository-relative paths;
@@ -15,6 +14,7 @@ The analysis asks who enters, leaves, or remains outside a weighted priority set
 - aggregate result tables and non-identifying bootstrap summaries;
 - checks that run without the unit-record data;
 - instructions for a full local rerun after obtaining the OECD file independently.
+- a three-seed paired school-split check of priority-list stability.
 
 The repository excludes the PISA unit-record files, student and school identifiers, row-level predictions, fold assignments, selection assignments, and school bootstrap multiplicities.
 
@@ -56,7 +56,9 @@ For 29,588 students in 965 sampled schools, weighted low-life-satisfaction preva
 | Expanded logistic regression | 0.303 | 26.5% |
 | Expanded histogram-based gradient boosting | 0.329 | 28.1% |
 
-The two logistic-regression priority sets shared 3.63% of total student weight and required 16.37% capacity for their union. Among students reporting low life satisfaction, 66.9% were outside both sets. The nonlinear model did not meet the prespecified criterion for a robust practical advantage over the expanded logistic model.
+The two logistic-regression priority sets shared 3.63% of total student weight and required 16.37% capacity for their union. Among students reporting low life satisfaction, 66.9% were outside both sets. Across three paired school-split seeds, cross-information overlap was 3.57%–3.63% of total weight; within-information overlap across seeds was 9.07%–9.51%. These ranges are descriptive, not confidence intervals.
+
+The nonlinear model had a modest positive gain over expanded logistic regression. Its paired AP and recall intervals excluded zero, but their lower bounds did not exceed the researcher-set +0.02 AP and +0.03 recall comparison margins. These margins are descriptive, not preregistered or validated against service costs.
 
 These quantities describe this sample and frozen analysis. They do not show that the added experiences cause low life satisfaction or that a ranking improves access to support.
 

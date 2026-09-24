@@ -206,6 +206,31 @@ tempCodeRunnerFile.py
 # Ruff stuff:
 .ruff_cache/
 
+# OECD unit records and derived row-level intermediates must stay local.
+data/raw/pisa2022/*
+!data/raw/pisa2022/README.md
+*.sav
+*.zsav
+*.por
+*.SAV
+*.ZSAV
+*.POR
+*.partial*
+download_parts/
+artifacts/**/oof_predictions.csv.gz
+artifacts/**/sensitivity_predictions.csv.gz
+artifacts/**/revision_predictions.csv.gz
+artifacts/**/visibility_assignments.csv.gz
+artifacts/**/fold_assignments.csv.gz
+artifacts/**/school_multiplicities.csv.gz
+artifacts/**/artifact_manifest.json
+artifacts/**/run_manifest.json
+artifacts/**/*.log
+
+# Local stability rerun provenance; the aggregate outputs are tracked separately.
+artifacts/stability_revision_20260923/run.log
+artifacts/stability_revision_20260923/manifest.json
+
 # PyPI configuration file
 .pypirc
 

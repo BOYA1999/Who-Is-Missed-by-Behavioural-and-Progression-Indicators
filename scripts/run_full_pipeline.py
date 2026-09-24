@@ -34,10 +34,24 @@ steps = [
     "run_profile_bootstrap_reselected.py",
     "validate_profile_bootstrap_reselected.py",
     "run_targeted_revision_round2.py",
-    "validate_public_aggregates.py",
 ]
 for name in steps:
     print(f"\n=== {name} ===", flush=True)
     subprocess.run([sys.executable, str(ROOT / "scripts" / name)], cwd=ROOT, check=True)
+
+for name in ["run_stability.py", "within_school_overlap_from_oof.py"]:
+    print(f"\n=== {name} ===", flush=True)
+    subprocess.run(
+        [sys.executable, str(ROOT / "artifacts" / "stability_revision_20260923" / name)],
+        cwd=ROOT,
+        check=True,
+    )
+
+print("\n=== validate_public_aggregates.py ===", flush=True)
+subprocess.run(
+    [sys.executable, str(ROOT / "scripts" / "validate_public_aggregates.py")],
+    cwd=ROOT,
+    check=True,
+)
 
 print("\nFull local pipeline completed. Keep unit-level intermediates private.")

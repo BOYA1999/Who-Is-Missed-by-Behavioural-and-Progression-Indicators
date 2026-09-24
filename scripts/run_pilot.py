@@ -498,7 +498,7 @@ Proceed to the frozen main analysis if fold checks, calibration values, and subg
 |---|---|---|---|---|
 | Routine visible information adds coverage beyond random capacity | recall at 10% capacity | > 0.10 | {routine['recall_at_10pct_capacity']:.3f} | {'supported directionally' if routine['recall_at_10pct_capacity'] > 0.10 else 'refuted directionally'} |
 | Extra school-experience scales add information | grouped AUPRC | expanded > routine | {expanded['auprc'] - routine['auprc']:+.3f} | {'supported directionally' if expanded['auprc'] > routine['auprc'] else 'not supported'} |
-| Complex model yields practical gain | AUPRC +0.02 or recall +0.03 | threshold met | AUPRC {complex_delta_auprc:+.3f}; recall {complex_delta_recall:+.3f} | {'supported directionally' if complex_delta_auprc >= 0.02 or complex_delta_recall >= 0.03 else 'not supported in pilot'} |
+| Complex model crosses descriptive point-margin | researcher-set AUPRC +0.02 or recall +0.03 | point-margin comparison only | AUPRC {complex_delta_auprc:+.3f}; recall {complex_delta_recall:+.3f} | {'point margin crossed; practical value untested' if complex_delta_auprc >= 0.02 or complex_delta_recall >= 0.03 else 'point margin not crossed'} |
 | Student-random split is optimistic | AUPRC random - grouped | > 0 | {random_optimism:+.3f} | {'supported directionally' if random_optimism > 0 else 'not supported in pilot'} |
 
 All verdicts are pilot-level and remain inconclusive for the manuscript until nested grouped validation and cluster uncertainty analysis are completed.

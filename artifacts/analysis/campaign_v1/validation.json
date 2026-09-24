@@ -20,5 +20,5 @@
     "immigration_background": 0.04296240377375479,
     "sex": 0.1824201898100747
   },
-  "review_scope": "four pre-specified sensitivity slices; no model-refitting uncertainty intervals"
+  "review_scope": "four selected sensitivity slices; no model-refitting uncertainty intervals"
 }

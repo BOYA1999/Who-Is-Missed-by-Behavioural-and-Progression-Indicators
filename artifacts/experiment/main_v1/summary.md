@@ -7,7 +7,7 @@ The nested school validation and 19-region internal–external validation comple
 - Routine penalized logistic regression, school nested: AUPRC 0.200; recall at 10% capacity 0.163.
 - Expanded penalized logistic regression, school nested: AUPRC 0.303; recall 0.265.
 - Expanded HGB, school nested: AUPRC 0.329; recall 0.281 (fixed-OOF school-bootstrap 95% interval 0.265–0.299).
-- Expanded HGB versus expanded penalized logistic regression: paired school-bootstrap AUPRC +0.026 (95% interval +0.015 to +0.036); recall +0.016 (+0.003 to +0.029). The extra gain is positive but does not robustly clear the pre-specified practical threshold.
+- Expanded HGB versus expanded penalized logistic regression: paired school-bootstrap AUPRC +0.026 (95% interval +0.015 to +0.036); recall +0.016 (+0.003 to +0.029). The gain is positive, while the lower interval bounds remain below the researcher-set descriptive comparison margins of +0.02 AUPRC and +0.03 recall.
 - Expanded HGB AUPRC, region IECV: 0.323; school-nested minus region-IECV +0.006.
 - Simple visible-risk heuristic, complete cases: recall at 10% capacity 0.160.
 
